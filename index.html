@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Desarrollador Full Stack</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header con menú hamburguesa -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">DevCode</span>
+      </div>
+
+      <!-- Menú hamburguesa -->
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Menú desplegable -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active">🏠 Inicio</a>
+        <a href="#sobre-mi" class="nav-link">👨‍💻 Sobre Mí</a>
+        <a href="#habilidades" class="nav-link">🚀 Habilidades</a>
+        <a href="#certificaciones" class="nav-link">🏆 Certificaciones</a>
+        <a href="#contacto" class="nav-link">📞 Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Principal -->
+  <section id="inicio" class="hero">
+    <div class="hero-background">
+      <div class="grid-pattern"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="status-indicator">
+          <div class="pulse-dot"></div>
+          <span>Disponible para nuevos proyectos</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="nombre">Bryan Valdés</span><br />
+          <br>
+          <span class="title-role">Full Stack Developer</span>
+        </h1>
+
+        <p class="hero-description">
+          Transformo ideas en experiencias digitales únicas. Especializado en
+          desarrollo web moderno con tecnologías de vanguardia y diseño centrado
+          en el usuario.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="scrollToSection('contacto')">
+            <span>Trabajemos juntos</span>
+            <i class="arrow">→</i>
+          </button>
+          <button class="btn-secondary" onclick="scrollToSection('sobre-mi')">
+            Ver mi trabajo
+          </button>
+        </div>
+      </div>
+
+      <!-- Terminal de código -->
+      <div class="code-terminal">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="control close"></span>
+            <span class="control minimize"></span>
+            <span class="control maximize"></span>
+          </div>
+          <span class="terminal-title">developer.js</span>
+        </div>
+        <div class="terminal-body">
+          <div class="code-line">
+            <span class="line-number">1</span>
+            <span class="code"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">2</span>
+            <span class="code">&nbsp;&nbsp;<span class="property">name</span>: <span class="string">'Bryan Valdes'</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">3</span>
+            <span class="code">&nbsp;&nbsp;<span class="property">skills</span>: <span class="array">['React', 'Node.js', 'Python']</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">4</span>
+            <span class="code">&nbsp;&nbsp;<span class="property">passion</span>: <span class="string">'Crear soluciones innovadoras'</span></span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">5</span>
+            <span class="code">};</span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">6</span><span class="code"></span>
+          </div>
+          <div class="code-line">
+            <span class="line-number">7</span>
+            <span class="code"><span class="variable">developer</span>.<span class="method">code</span>();<span class="cursor">|</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="sobre-mi">
+    <div class="container">
+      <h2 class="gradient-text">Sobre Mí</h2>
+      <h3 class="titulo-secundario">Me encuentro en busca constante de desafíos y crecimiento profesional</h3>
+
+      <p class="descripcion">
+        Soy <strong>Ingeniero en Informática</strong> y la tecnología es mi verdadera pasión. Me caracterizo por ser una persona 
+        <strong class="resaltado">dedicada</strong>, 
+        <strong class="resaltado">constante</strong> y 
+        <strong class="resaltado">tenaz</strong> en todo lo que emprendo.
+      </p>
+
+      <p class="descripcion">
+        Estoy convencido de que la perseverancia y la disciplina son esenciales para superar cualquier obstáculo. Mi entusiasmo por la programación me motiva a crecer continuamente, mientras que mi determinación me permite descubrir soluciones cuando otros solo ven dificultades.
+      </p>
+
+      <div class="cualidades">
+        <div class="cualidad">
+          <div class="emoji">🔥</div>
+          <h4>Entusiasta</h4>
+          <p>Disfruto desarrollando y aprendiendo de cada proyecto</p>
+        </div>
+
+        <div class="cualidad">
+          <div class="emoji">💪</div>
+          <h4>Perseverante</h4>
+          <p>Trabajo con constante dedicación</p>
+        </div>
+
+        <div class="cualidad">
+          <div class="emoji">🎯</div>
+          <h4>Obstinado</h4>
+          <p>Si me encuentro con algún obstáculo, busco la solución más eficiente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="habilidades section">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <ul class="lista-habilidades">
+        <li>✅ HTML, CSS y JavaScript moderno</li>
+        <li>✅ Frameworks: Flask, Express.js</li>
+        <li>✅ Backend con Node.js y Python</li>
+        <li>✅ Bases de datos: MongoDB, MySQL</li>
+        <li>✅ Control de versiones: Git y GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección Certificaciones -->
+  <section id="certificaciones" class="section certificaciones">
+    <div class="container">
+      <h2 class="section-title">Certificaciones</h2>
+      <ul class="lista-certificaciones">
+        <li>
+          <span class="icon">📜</span> Cisco Networking Academy – Introducción a las Redes
+          <a href="Certificados/IntroduccionRedes.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
+        </li>
+        <li>
+          <span class="icon">📜</span> Cisco Networking Academy – Fundamentos de Enrutamiento y Conmutación
+          <a href="Certificados/FundamentosEnrutamiento.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
+        </li>
+        <li>
+          <span class="icon">📜</span> Udemy – Curso de COBOL y JCL para mainframes
+          <a href="Certificados/COBOL_JCL.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="section contacto">
+  <div class="container">
+    <div class="tarjeta-contacto">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contacto-item github">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <a href="https://github.com/BValdesDev" target="_blank">@BValdesDev</a>
+      </div>
+      <div class="contacto-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+        <a href="mailto:bryanvaldes073@gmail.com">bryanvaldes073@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Bryan Valdés. Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
